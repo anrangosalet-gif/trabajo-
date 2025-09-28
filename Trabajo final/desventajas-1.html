@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <title>La Evolución del Internet y sus Desventajas</title>
+
+    <!-- Fuente moderna -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+    
+    <!-- FontAwesome para los íconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 20px;
+            overflow-x: hidden;
+            color: #fff;
+            position: relative;
+            min-height: 100vh;
+            background: black;
+        }
+
+        body::before {
+            content: "";
+            position: fixed;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background: url('sad.gif') center center / cover no-repeat fixed;
+            opacity: 0.25;
+            z-index: -1;
+            filter: brightness(1.2); /* brillo aumentado */
+            animation: fondoDesplazado 30s linear infinite;
+        }
+
+        @keyframes fondoDesplazado {
+            0% { background-position: center top; }
+            100% { background-position: center bottom; }
+        }
+
+        .wrapper,
+        .intro,
+        .advantage,
+        footer {
+            background: transparent;
+            padding: 0;
+            border-radius: 0;
+            backdrop-filter: none;
+            box-shadow: none;
+        }
+
+        .wrapper {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        h2 {
+            text-align: center;
+            font-size: 3em;
+            margin-bottom: 10px;
+            color: #ff4c4c;
+            text-shadow: 2px 2px 6px rgba(0,0,0,0.8);
+            animation: fadeInDown 1s ease-in-out;
+        }
+
+        .intro {
+            max-width: 900px;
+            margin: 0 auto 30px auto;
+            text-align: center;
+            font-size: 1.2em;
+            line-height: 1.8;
+            animation: fadeIn 1.2s ease-in-out;
+            text-shadow: 1px 1px 4px rgba(0,0,0,0.7);
+        }
+
+        .animated-image {
+            display: flex;
+            justify-content: center;
+            margin: 30px 0;
+            animation: zoomIn 2s ease-in-out;
+        }
+
+        .animated-image img {
+            max-width: 100%;
+            border-radius: 15px;
+            box-shadow: 0 0 20px rgba(0,0,0,0.4);
+        }
+
+        .advantage {
+            display: flex;
+            align-items: center;
+            margin-top: 20px;
+            padding: 15px 0;
+            transition: transform 0.3s;
+            animation: fadeInUp 1s ease-in-out;
+        }
+
+        .advantage:hover {
+            transform: translateY(-5px);
+        }
+
+        .icon {
+            font-size: 2em;
+            margin-right: 15px;
+            color: #ff4c4c;
+            min-width: 40px;
+            text-align: center;
+            text-shadow: 1px 1px 4px rgba(0,0,0,0.7);
+        }
+
+        .title {
+            font-size: 1.5em;
+            margin-bottom: 8px;
+            font-weight: bold;
+            text-shadow: 1px 1px 4px rgba(0,0,0,0.7);
+        }
+
+        p {
+            line-height: 1.6;
+            margin: 0;
+            text-shadow: 1px 1px 3px rgba(0,0,0,0.7);
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 50px;
+            padding: 20px 0;
+            font-size: 1em;
+            animation: fadeInUp 1s ease-in-out;
+            text-shadow: 1px 1px 4px rgba(0,0,0,0.7);
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        @keyframes fadeInDown {
+            from { opacity: 0; transform: translateY(-20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        @keyframes zoomIn {
+            from { opacity: 0; transform: scale(0.8); }
+            to { opacity: 1; transform: scale(1); }
+        }
+
+        @media(max-width: 768px){
+            h2 {
+                font-size: 2em;
+            }
+            .advantage {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            .icon {
+                margin-bottom: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <h2>⚠️ Desventajas del Internet</h2>
+
+        <div class="animated-image">
+            <img src="https://media.giphy.com/media/xUA7aZeLE2e0P7Znz2/giphy.gif" alt="Desventajas de Internet">
+        </div>
+
+        <div class="intro">
+            <p>Aunque el internet ofrece enormes beneficios, también presenta importantes desventajas que pueden afectar a los usuarios si no se toman precauciones.</p>
+            <p>A continuación, se detallan algunas de las principales desventajas del uso del internet:</p>
+        </div>
+
+        <!-- Desventajas -->
+        <div class="advantage">
+            <i class="fas fa-user-secret icon"></i>
+            <div>
+                <div class="title">1. Pérdida de privacidad</div>
+                <p>Los datos personales pueden ser recolectados o filtrados sin consentimiento.</p>
+            </div>
+        </div>
+
+        <div class="advantage">
+            <i class="fas fa-virus icon"></i>
+            <div>
+                <div class="title">2. Riesgos de ciberseguridad</div>
+                <p>Virus y ataques informáticos son una amenaza constante.</p>
+            </div>
+        </div>
+
+        <div class="advantage">
+            <i class="fas fa-child icon"></i>
+            <div>
+                <div class="title">3. Contenido inapropiado</div>
+                <p>Los niños pueden estar expuestos a contenido violento o perjudicial.</p>
+            </div>
+        </div>
+
+        <div class="advantage">
+            <i class="fas fa-wifi-slash icon"></i>
+            <div>
+                <div class="title">4. Dependencia de conexión</div>
+                <p>Muchas actividades requieren conexión estable a internet.</p>
+            </div>
+        </div>
+
+        <div class="advantage">
+            <i class="fas fa-brain icon"></i>
+            <div>
+                <div class="title">5. Adicción digital</div>
+                <p>El uso excesivo puede generar dependencia y reducir la productividad.</p>
+            </div>
+        </div>
+
+        <div class="advantage">
+            <i class="fas fa-bullhorn icon"></i>
+            <div>
+                <div class="title">6. Desinformación</div>
+                <p>Las fake news pueden circular rápidamente y manipular opiniones.</p>
+            </div>
+        </div>
+
+        <div class="advantage">
+            <i class="fas fa-user-friends icon"></i>
+            <div>
+                <div class="title">7. Aislamiento social</div>
+                <p>Reduce la interacción cara a cara y puede afectar relaciones reales.</p>
+            </div>
+        </div>
+
+        <footer>
+            <p>Conocer y entender las desventajas del internet es fundamental para usarlo de forma segura y responsable.</p>
+        </footer>
+    </div>
+
+    <a href="Trabajo final.html">
+        <img src="inter 5.gif" height="100" width="100" alt="Botón de regreso">
+    </a>
+</body>
+</html>

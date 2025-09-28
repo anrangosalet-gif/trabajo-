@@ -1,0 +1,61 @@
+/* Fondo general */
+  
+body {
+    
+    background: linear-gradient(to right, #060606, #131314);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #1527e9;
+    background: url('inter3.gif') no-repeat center center fixed;
+    background-size: cover;
+    color: #f6f5f5;
+    line-height: 1.6;
+    padding: 20px;
+    line-height: 1.6;
+    margin: 30px;
+    padding: 20px;
+    border-radius: 15px;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    background-color: #e81111d0;
+}
+
+/* Título principal */
+h2 {
+    color: #1e3799;
+    font-size: 2.2em;
+    margin-bottom: 30px;
+    text-shadow: 1px 1px 2px #0a0a0a;
+}
+
+/* Párrafos */
+p {
+    background-color: #cf1414cc;
+    padding: 15px 20px;
+    border-left: 6px solid #4a69bd;
+    margin: 20px 0;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    transition: background-color 0.3s;
+}
+
+p:hover {
+    background-color: #131313;
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+    body {
+        margin: 10px;
+        padding: 10px;
+    }
+
+    h2 {
+        font-size: 1.6em;
+    }
+
+    p {
+        font-size: 0.95em;
+    }
+}

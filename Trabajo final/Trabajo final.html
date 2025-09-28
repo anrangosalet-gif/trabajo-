@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Trabajo Final - Fondo Animado Azul con Letras Animadas</title>
+<link rel="shortcut icon" type="image/x.icon" href="icono.jpg">
+
+<style>
+  /* Reset */
+  * {
+    margin: 0; padding: 0; box-sizing: border-box;
+  }
+
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    animation: backgroundShift 15s ease infinite;
+    background: linear-gradient(270deg, #0d47a1, #1976d2, #42a5f5, #90caf9);
+    background-size: 800% 800%;
+  }
+
+  @keyframes backgroundShift {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+
+  header {
+    background: rgba(0, 0, 0, 0.4);
+    padding: 20px 0;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+  }
+
+  nav {
+    max-width: 960px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+  }
+
+  nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 700;
+    font-size: 1.1rem;
+    padding: 10px 15px;
+    border-radius: 8px;
+    transition: background 0.3s ease, color 0.3s ease;
+    position: relative;
+    animation: glowPulse 3s ease-in-out infinite;
+  }
+
+  nav a:hover,
+  nav a:focus {
+    background: #bbdefb;
+    color: #0d47a1;
+    box-shadow: 0 4px 12px rgba(187, 222, 251, 0.8);
+    outline: none;
+    animation-play-state: paused;
+  }
+
+  main {
+    flex-grow: 1;
+    max-width: 960px;
+    margin: 40px auto;
+    padding: 30px 20px;
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 15px;
+    box-shadow: 0 0 40px rgba(0,0,0,0.6);
+    text-align: center;
+  }
+
+  main h1 {
+    font-size: 2.8rem;
+    margin-bottom: 20px;
+    text-shadow: 1px 1px 8px rgba(0,0,0,0.7);
+    animation: glowPulse 3s ease-in-out infinite;
+  }
+
+  main p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    max-width: 700px;
+    margin: 0 auto;
+    color: #e0e0e0;
+    text-shadow: 1px 1px 6px rgba(0,0,0,0.6);
+  }
+
+  footer {
+    background: rgba(0, 0, 0, 0.4);
+    color: #ccc;
+    text-align: center;
+    padding: 15px 10px;
+    font-size: 0.9rem;
+    box-shadow: inset 0 1px 3px rgba(255,255,255,0.1);
+  }
+
+  @keyframes glowPulse {
+    0%, 100% {
+      text-shadow:
+        0 0 5px #bbdefb,
+        0 0 10px #90caf9,
+        0 0 20px #42a5f5,
+        0 0 30px #1976d2,
+        0 0 40px #0d47a1;
+      color: #e3f2fd;
+    }
+    50% {
+      text-shadow:
+        0 0 20px #bbdefb,
+        0 0 30px #90caf9,
+        0 0 40px #42a5f5,
+        0 0 50px #1976d2,
+        0 0 60px #0d47a1;
+      color: #bbdefb;
+    }
+  }
+
+  @media (max-width: 600px) {
+    nav {
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    main h1 {
+      font-size: 2rem;
+    }
+
+    main p {
+      font-size: 1rem;
+      padding: 0 10px;
+    }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <nav>
+    <a href="Historia.html">Historia</a>
+    <a href="Ventajas .html">Ventajas</a>
+    <a href="desventajas-1.html">Desventajas</a>
+    <a href="Brechas.html">Brechas</a>
+  </nav>
+</header>
+
+<main>
+  <h1>Bienvenido al Trabajo Final sobre Internet</h1>
+  <p>Explora las diferentes secciones para aprender sobre la historia, ventajas, desventajas y brechas digitales del Internet.</p>
+</main>
+
+<footer>
+  &copy; 2025 Trabajo Final. Todos los derechos reservados.
+</footer>
+
+</body>
+</html>

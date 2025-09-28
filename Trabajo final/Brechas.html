@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <title>La Brecha Digital Global</title>
+
+    <!-- Fuente moderna -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+    
+    <!-- FontAwesome para los íconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+    <style>
+        body  {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 20px;
+            overflow-x: hidden;
+            color: #fff;
+            position: relative;
+            min-height: 100vh;
+            /* Fondo centrado horizontal y 20% desde arriba vertical para "subirlo" */
+            background: url('brechal.gif') center 100% / cover no-repeat fixed;
+            background-size: cover;
+        }
+
+        body::before {
+            content: "";
+            position: fixed;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: -1;
+        }
+
+        .wrapper,
+        .intro,
+        .advantage,
+        footer {
+            background: transparent;
+            padding: 0;
+            border-radius: 0;
+            backdrop-filter: none;
+            box-shadow: none;
+        }
+
+        .wrapper {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        h2 {
+            text-align: center;
+            font-size: 3em;
+            margin-bottom: 10px;
+            color: #ff4c4c;
+            text-shadow: 2px 2px 6px rgba(0,0,0,0.8);
+            animation: fadeInDown 1s ease-in-out;
+        }
+
+        .intro {
+            max-width: 900px;
+            margin: 0 auto 30px auto;
+            text-align: center;
+            font-size: 1.2em;
+            line-height: 1.8;
+            animation: fadeIn 1.2s ease-in-out;
+            text-shadow: 1px 1px 4px rgba(0,0,0,0.7);
+        }
+
+        .advantage {
+            display: flex;
+            align-items: center;
+            margin-top: 20px;
+            padding: 15px 0;
+            transition: transform 0.3s;
+            animation: fadeInUp 1s ease-in-out;
+        }
+
+        .advantage:hover {
+            transform: translateY(-5px);
+        }
+
+        .icon {
+            font-size: 2em;
+            margin-right: 15px;
+            color: #ff4c4c;
+            min-width: 40px;
+            text-align: center;
+            text-shadow: 1px 1px 4px rgba(0,0,0,0.7);
+        }
+
+        .title {
+            font-size: 1.5em;
+            margin-bottom: 8px;
+            font-weight: bold;
+            text-shadow: 1px 1px 4px rgba(0,0,0,0.7);
+        }
+
+        p {
+            line-height: 1.6;
+            margin: 0;
+            text-shadow: 1px 1px 3px rgba(0,0,0,0.7);
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 50px;
+            padding: 20px 0;
+            font-size: 1em;
+            animation: fadeInUp 1s ease-in-out;
+            text-shadow: 1px 1px 4px rgba(0,0,0,0.7);
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        @keyframes fadeInDown {
+            from { opacity: 0; transform: translateY(-20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        @media(max-width: 768px){
+            h2 {
+                font-size: 2em;
+            }
+            .advantage {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            .icon {
+                margin-bottom: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <h2>🌍 Brecha Digital Global</h2>
+
+        <div class="intro">
+            <p>La brecha digital global es una manifestación de desigualdad social que se refiere a las diferencias en el acceso, uso y aprovechamiento de las tecnologías digitales entre distintos individuos, comunidades, regiones y países. Aunque el acceso a Internet ha aumentado significativamente en las últimas décadas, persisten disparidades notables que afectan el desarrollo económico, educativo y social de millones de personas, especialmente en países en desarrollo.</p>
+        </div>
+
+        <!-- Desventajas -->
+        <div class="advantage">
+            <i class="fas fa-user-secret icon"></i>
+            <div>
+                <div class="title">1. Pérdida de privacidad</div>
+                <p>Los datos personales pueden ser recolectados o filtrados sin consentimiento.</p>
+            </div>
+        </div>
+
+        <div class="advantage">
+            <i class="fas fa-virus icon"></i>
+            <div>
+                <div class="title">2. Riesgos de ciberseguridad</div>
+                <p>Virus y ataques informáticos son una amenaza constante.</p>
+            </div>
+        </div>
+
+        <div class="advantage">
+            <i class="fas fa-child icon"></i>
+            <div>
+                <div class="title">3. Contenido inapropiado</div>
+                <p>Los niños pueden estar expuestos a contenido violento o perjudicial.</p>
+            </div>
+        </div>
+
+        <div class="advantage">
+            <i class="fas fa-wifi-slash icon"></i>
+            <div>
+                <div class="title">4. Dependencia de conexión</div>
+                <p>Muchas actividades requieren conexión estable a internet.</p>
+            </div>
+        </div>
+
+        <div class="advantage">
+            <i class="fas fa-brain icon"></i>
+            <div>
+                <div class="title">5. Adicción digital</div>
+                <p>El uso excesivo puede generar dependencia y reducir la productividad.</p>
+            </div>
+        </div>
+
+        <div class="advantage">
+            <i class="fas fa-bullhorn icon"></i>
+            <div>
+                <div class="title">6. Desinformación</div>
+                <p>Las fake news pueden circular rápidamente y manipular opiniones.</p>
+            </div>
+        </div>
+
+        <div class="advantage">
+            <i class="fas fa-user-friends icon"></i>
+            <div>
+                <div class="title">7. Aislamiento social</div>
+                <p>Reduce la interacción cara a cara y puede afectar relaciones reales.</p>
+            </div>
+        </div>
+
+        <footer>
+            <p>Conocer y entender las desventajas del internet es fundamental para usarlo de forma segura y responsable.</p>
+        </footer>
+    </div>
+
+    <a href="Trabajo final.html">
+        <img src="inter 5.gif" height="100" width="100" alt="Botón de regreso">
+    </a>
+</body>
+</html>

@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <title>La Evolución del Internet y sus Ventajas</title>
+
+    <!-- Fuente moderna -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+    
+    <!-- FontAwesome para los íconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 20px;
+            overflow-x: hidden;
+            color: #fff;
+            position: relative;
+            min-height: 100vh;
+            background: black;
+        }
+
+        body::before {
+            content: "";
+            position: fixed;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background: url('img 2.gif') center top / cover no-repeat fixed;
+            opacity: 0.35;
+            z-index: -1;
+            filter: brightness(0.7);
+            animation: fondoDesplazado 30s linear infinite;
+        }
+
+        /* Animación del fondo */
+        @keyframes fondoDesplazado {
+            0% {
+                background-position: center top;
+            }
+            100% {
+                background-position: center bottom;
+            }
+        }
+
+        /* Transparencia de fondos */
+        .wrapper,
+        .intro,
+        .advantage,
+        footer {
+            background: transparent;
+            padding: 0;
+            border-radius: 0;
+            backdrop-filter: none;
+            box-shadow: none;
+        }
+
+        .wrapper {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        h2 {
+            text-align: center;
+            font-size: 3em;
+            margin-bottom: 10px;
+            color: #fff700;
+            text-shadow: 2px 2px 6px rgba(0,0,0,0.8);
+            animation: fadeInDown 1s ease-in-out;
+        }
+
+        .intro {
+            max-width: 900px;
+            margin: 0 auto 30px auto;
+            text-align: center;
+            font-size: 1.2em;
+            line-height: 1.8;
+            animation: fadeIn 1.2s ease-in-out;
+            text-shadow: 1px 1px 4px rgba(0,0,0,0.7);
+        }
+
+        .animated-image {
+            display: flex;
+            justify-content: center;
+            margin: 30px 0;
+            animation: zoomIn 2s ease-in-out;
+        }
+
+        .animated-image img {
+            max-width: 100%;
+            border-radius: 15px;
+            box-shadow: 0 0 20px rgba(0,0,0,0.4);
+        }
+
+        .advantage {
+            display: flex;
+            align-items: center;
+            margin-top: 20px;
+            padding: 15px 0;
+            transition: transform 0.3s;
+            animation: fadeInUp 1s ease-in-out;
+        }
+
+        .advantage:hover {
+            transform: translateY(-5px);
+        }
+
+        .icon {
+            font-size: 2em;
+            margin-right: 15px;
+            color: #fff700;
+            min-width: 40px;
+            text-align: center;
+            text-shadow: 1px 1px 4px rgba(0,0,0,0.7);
+        }
+
+        .title {
+            font-size: 1.5em;
+            margin-bottom: 8px;
+            font-weight: bold;
+            text-shadow: 1px 1px 4px rgba(0,0,0,0.7);
+        }
+
+        p {
+            line-height: 1.6;
+            margin: 0;
+            text-shadow: 1px 1px 3px rgba(0,0,0,0.7);
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 50px;
+            padding: 20px 0;
+            font-size: 1em;
+            animation: fadeInUp 1s ease-in-out;
+            text-shadow: 1px 1px 4px rgba(0,0,0,0.7);
+        }
+
+        /* Animaciones */
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        @keyframes fadeInDown {
+            from { opacity: 0; transform: translateY(-20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        @keyframes zoomIn {
+            from { opacity: 0; transform: scale(0.8); }
+            to { opacity: 1; transform: scale(1); }
+        }
+
+        /* Responsive */
+        @media(max-width: 768px){
+            h2 {
+                font-size: 2em;
+            }
+            .advantage {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            .icon {
+                margin-bottom: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <h2>🌐 La Evolución del Internet y sus Ventajas</h2>
+
+        <div class="animated-image">
+            <img src="https://media.giphy.com/media/3o6Zt481isNVuQI1l6/giphy.gif" alt="Internet animado">
+        </div>
+
+        <div class="intro">
+            <p>El internet ha transformado profundamente nuestra vida cotidiana, ofreciendo una amplia gama de ventajas que impactan en diversos aspectos de nuestra existencia.</p>
+            <p>A continuación, se detallan algunas de las principales ventajas del internet:</p>
+        </div>
+
+        <!-- Lista de ventajas -->
+        <div class="advantage">
+            <i class="fas fa-globe icon"></i>
+            <div>
+                <div class="title">1. Acceso instantáneo a información</div>
+                <p>Internet permite acceder a una vasta cantidad de información de manera rápida y sencilla...</p>
+            </div>
+        </div>
+
+        <div class="advantage">
+            <i class="fas fa-comments icon"></i>
+            <div>
+                <div class="title">2. Comunicación global e instantánea</div>
+                <p>Gracias al internet, es posible comunicarse con personas de todo el mundo en tiempo real...</p>
+            </div>
+        </div>
+
+        <div class="advantage">
+            <i class="fas fa-graduation-cap icon"></i>
+            <div>
+                <div class="title">3. Educación y aprendizaje en línea</div>
+                <p>El internet ha revolucionado la educación, ofreciendo acceso a cursos, tutoriales y materiales educativos...</p>
+            </div>
+        </div>
+
+        <div class="advantage">
+            <i class="fas fa-credit-card icon"></i>
+            <div>
+                <div class="title">4. Facilita trámites y gestiones</div>
+                <p>Permite realizar gestiones bancarias, pagar facturas, solicitar documentos y hacer compras desde casa...</p>
+            </div>
+        </div>
+
+        <div class="advantage">
+            <i class="fas fa-film icon"></i>
+            <div>
+                <div class="title">5. Entretenimiento y ocio</div>
+                <p>Plataformas como Netflix, YouTube y Spotify han transformado la forma en que consumimos contenido de ocio...</p>
+            </div>
+        </div>
+
+        <div class="advantage">
+            <i class="fas fa-users icon"></i>
+            <div>
+                <div class="title">6. Fomenta la colaboración y el trabajo en equipo</div>
+                <p>Herramientas como Google Drive, Teams y Slack permiten compartir documentos, coordinar proyectos y trabajar en equipo...</p>
+            </div>
+        </div>
+
+        <div class="advantage">
+            <i class="fas fa-briefcase icon"></i>
+            <div>
+                <div class="title">7. Oportunidades de negocio y emprendimiento</div>
+                <p>Internet abre oportunidades globales para emprendedores, permitiendo vender productos y crear tiendas virtuales...</p>
+            </div>
+        </div>
+
+        <div class="advantage">
+            <i class="fas fa-universal-access icon"></i>
+            <div>
+                <div class="title">8. Promueve la inclusión y accesibilidad</div>
+                <p>Existen recursos y tecnologías en línea que ayudan a personas con discapacidades a integrarse plenamente...</p>
+            </div>
+        </div>
+
+        <div class="advantage">
+            <i class="fas fa-clock icon"></i>
+            <div>
+                <div class="title">9. Flexibilidad y ahorro de tiempo</div>
+                <p>Permite realizar diversas actividades en línea y equilibrar mejor la vida personal y profesional...</p>
+            </div>
+        </div>
+
+        <footer>
+            <p>En resumen, el internet ha transformado nuestra forma de vivir, aprender, trabajar y relacionarnos. Aunque presenta desafíos, sus beneficios son innegables y continúan moldeando nuestro futuro.</p>
+        </footer>
+    </div>
+
+    <a href="Trabajo final.html">
+        <img src="BYsO.gif" height="100" width="100" alt="Botón de regreso">
+    </a>
+</body>
+</html>
+
